@@ -104,28 +104,31 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
---
--- Paste Question 1 here
+-- Create a table named Orders with the following columns:
+   OrderID as INTEGER OrderDate as TEXT CustomerID as INTEGER
 
-```sql
--- Paste your SQL code below for Question 1
+```
+create table Orders(OrderID INTEGER,OrderDate TEXT,CustomerID INTEGER);
+select * from Orders
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1227" height="388" alt="image" src="https://github.com/user-attachments/assets/0542b3c4-bf10-4ac5-ac88-4d1503a65220" />
+
 
 **Question 2**
----
--- Paste Question 2 here
+--- Write an SQL query to add two new columns, first_name and last_name, to the table employee. Both columns should have a data type of varchar(50).
+-- 
 
-```sql
--- Paste your SQL code below for Question 2
+```
+alter table employee add column first_name varchar(50);
+alter table employee add column last_name varchar(50); 
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1182" height="306" alt="image" src="https://github.com/user-attachments/assets/14ef3dd1-32bd-4af8-a134-2c9f0fad9344" />
 
 **Question 3**
 ---
