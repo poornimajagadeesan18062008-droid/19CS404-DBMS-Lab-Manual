@@ -22,31 +22,27 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Payments tracked for memberships and sessions.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+
+<img width="1366" height="902" alt="image" src="https://github.com/user-attachments/assets/d832301f-149c-46ba-a7a5-493f9eacdd30" />
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="1142" height="356" alt="image" src="https://github.com/user-attachments/assets/f0faa6b8-3930-47c3-8b0a-d8d71e1076aa" />
+
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="1077" height="305" alt="image" src="https://github.com/user-attachments/assets/3dc4cdac-df56-4327-9450-eae5974c01ba" />
+
 
 ### Assumptions
-- 
-- 
-- 
+One membership type per member.
+
+A program must have at least one trainer.
+
+Personal training is optional and billed separately.
+
+Attendance is recorded only when members participate.  
 
 ---
 
@@ -64,31 +60,27 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+<img width="1247" height="891" alt="image" src="https://github.com/user-attachments/assets/10a7b0c9-d584-4bab-80c4-639b735d6be1" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="956" height="325" alt="image" src="https://github.com/user-attachments/assets/a5d9607e-8b21-49fe-8f71-ebe3072ca54d" />
+
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="759" height="278" alt="image" src="https://github.com/user-attachments/assets/33d05ff1-a84e-41f1-a147-34e20750111f" />
+
 
 ### Assumptions
-- 
-- 
-- 
+Each book has only one copy in the database (copies could be modeled separately if needed).
+
+Fines are tracked as part of loan record.
+
+Members may or may not attend events.
+
+Each event takes place in exactly one room.
 
 ---
 
@@ -106,31 +98,24 @@ A popular restaurant wants to manage reservations, orders, and billing.
 - Waiters assigned to serve reservations.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+<img width="1201" height="708" alt="image" src="https://github.com/user-attachments/assets/11a36b99-712d-4a34-b4d4-a890e48db4a6" />
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="1089" height="405" alt="image" src="https://github.com/user-attachments/assets/743beae8-426f-462d-9a75-639d49f421d9" />
+
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="870" height="315" alt="image" src="https://github.com/user-attachments/assets/1d1ab949-414a-4c62-8b69-a39415a7653f" />
+
 
 ### Assumptions
-- 
-- 
-- 
+Walk-in customers treated as reservations without advance booking.
+
+One waiter handles a reservation at a time.
+
+Service charge fixed per bill.
 
 ---
 
